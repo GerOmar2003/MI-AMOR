@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flores</title>
+    <script>
+        function showGiftDialog() {
+            const accept = confirm("💖 Mi amor, en este rincón del mundo solo hay un deseo: hacerte sonreír. Tengo una sorpresa que iluminará tu corazón. ¿Te gustaría descubrirla? \n\n\"Eres el susurro de mis sueños, la melodía en mi ser.\"");
+            if (accept) {
+                window.location.href = "FLORES.html"; // Redirige a FLORES.html
+            } else {
+                const retry = confirm("Oh, mi dulce amor... 😔 Tu respuesta me llena de melancolía, ero como el sol siempre vuelve a brillar, te ofrezco otra oportunidad. \n\n\"En tus ojos encuentro el sol que guía mis días. ¿Te atreves a descubrir el regalo que he preparado con tanto cariño para ti?\"");
+                if (retry) {
+                    showGiftDialog(); // Muestra el mensaje de nuevo
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="greetings">
+        <span>H</span>
+        <span>O</span>
+        <span>L</span>
+        <span>A</span>
+        <span> </span>
+        <span>M</span>
+        <span>I</span>
+        <span> </span>
+        <span>A</span>
+        <span>M</span>
+        <span>O</span>
+        <span>R</span>
+    </div>
+    <div class="description">
+        <span>Tengo un regalo especial para ti, baby!!</span>
+    </div>
+    <div class="button">
+        <button onclick="showGiftDialog()">Para tu</button>
+    </div>
+</body>
+</html>
